@@ -2,6 +2,6 @@ FROM nginx:alpine
 
 WORKDIR /etc/nginx/conf.d
 
-COPY ansible.devforfree.tech.conf .
+COPY nginx.conf .
 
 CMD ["nginx", "-g", "daemon off;"]
